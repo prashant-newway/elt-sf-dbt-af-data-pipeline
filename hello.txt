@@ -1,0 +1,6 @@
+ELT workflow where loading data in snowflake -> transform in dbt within snowflake because it is supercheap . 
+Airflow as the management tool for all the dbt workflow providing with UI to monitor these workflows . Instead of using bash operator trigger 
+dbt commands which involved two different dags.
+using cosmos for airflow to easily get insights in the ongoing sub actions in the dbt.gives full visibility in the dbt workflow. 
+only one dag to be created .cosmos + airflow - cosmos read dbt  and will provide visualization layer of dbt workflow within airflow .
+gives context in the rest of the data pipeline and not work in isolation.

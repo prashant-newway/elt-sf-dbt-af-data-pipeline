@@ -1,0 +1,46 @@
+[0m21:34:07.830430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7219852753a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x721986500f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x721985c78440>]}
+
+
+============================== 21:34:07.835451 | a004719b-ad31-4498-acf0-430c338d6740 ==============================
+[0m21:34:07.835451 [info ] [MainThread]: Running with dbt=1.8.6
+[0m21:34:07.836308 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/prashant-newway/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:35:29.313307 [debug] [MainThread]: Starter project path: /home/prashant-newway/.local/share/pipx/venvs/dbt-core/lib/python3.12/site-packages/dbt/include/starter_project
+[0m21:35:29.320906 [info ] [MainThread]: 
+Your new dbt project "elt_sf_dbt_af" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:35:29.322954 [info ] [MainThread]: Setting up your profile.
+[0m21:35:29.338764 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m21:35:29.341439 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 81.57842, "process_user_time": 1.947943, "process_kernel_time": 0.162991, "process_mem_max_rss": "86900", "process_in_blocks": "22712", "process_out_blocks": "72", "command_success": false}
+[0m21:35:29.345936 [debug] [MainThread]: Command `dbt init` failed at 21:35:29.345510 after 81.58 seconds
+[0m21:35:29.348421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7219856660f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7219851d7980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x721985061490>]}
+[0m21:35:29.354041 [debug] [MainThread]: Flushing usage events
+[0m21:40:04.435476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c929fb1c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c92aac7bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c92a2b76e0>]}
+
+
+============================== 21:40:04.439317 | 46eaa86f-4feb-4262-99c6-3f27850256ed ==============================
+[0m21:40:04.439317 [info ] [MainThread]: Running with dbt=1.8.6
+[0m21:40:04.440331 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/prashant-newway/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:40:04.441393 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/prashant-newway/Documents/DataEngineering/elt-sf-dbt-af/dags/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:40:04.442802 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.07427098, "process_user_time": 1.887148, "process_kernel_time": 0.11189, "process_mem_max_rss": "86408", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m21:40:04.443712 [debug] [MainThread]: Command `dbt deps` failed at 21:40:04.443561 after 0.08 seconds
+[0m21:40:04.444365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c929436990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c9297c4740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76c929655790>]}
+[0m21:40:04.444953 [debug] [MainThread]: Flushing usage events
